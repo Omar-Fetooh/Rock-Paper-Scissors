@@ -20,7 +20,7 @@ function playRound(playerSelection, computerSelection) {
         }
         else {
             ++computerScore;
-            return 'You lost! paper is beaten by scissors'
+            return 'You lost! scissors is beaten by rock'
         }
     }
     else if (computerSelection === 'paper') {
@@ -30,7 +30,7 @@ function playRound(playerSelection, computerSelection) {
         }
         else {
             ++playerScore;
-            return 'You Won!Scissors beats paper '
+            return 'You Won! Scissors beats paper '
         }
     }
     else if (computerSelection === 'scissors') {
@@ -53,4 +53,13 @@ function game() {
         console.log(playRound(playerSelection, computerSelection));
         console.log(`player Score = ${playerScore} , ComputerScore=${computerScore}`)
     }
+    if (playerScore === 5) {
+        console.log(`Congratulations , You Won ! final result : player Score: ${playerScore}, computer Score: ${computerScore}`);
+    }
+    else {
+        console.log(`sorry, You Lost ! final result : player Score: ${playerScore}, computer Score: ${computerScore}`);
+    }
+    playerScore = 0;
+    computerScore = 0;
 }
+
