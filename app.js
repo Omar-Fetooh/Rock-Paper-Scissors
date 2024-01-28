@@ -5,6 +5,7 @@ let ScissorsButton = document.querySelector('.Scissors')
 let resText = document.querySelector('.resText')
 let result = document.querySelector('.result');
 let FinalResult = document.querySelector('.FinalResult')
+let selections = document.querySelector('.selections')
 
 function disableButtons() {
     RockButton.disabled = true;
@@ -79,6 +80,7 @@ function playRound(playerSelection, computerSelection) {
             result.innerText = `player Score: ${playerScore}, computer Score: ${computerScore}`;
         }
     }
+    selections.textContent = `player Selection ${playerSelection} -------- Computer Selection ${computerSelection}`
     checkFinish()
 }
 
