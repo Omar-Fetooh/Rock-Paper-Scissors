@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="header">You Play Against Computer</h1>
+    </div>
 
-    <button class="Rock">Rock</button>
-    <button class="Paper">Paper</button>
-    <button class="Scissors">Scissors</button>
-    <div class="selections"></div>
-    <div class="result"></div>
-    <div class="resText"></div>
-    <div class="FinalResult"></div>
+    <div class="container">
+        <button class="Rock">Rock</button>
+        <button class="Paper">Paper</button>
+        <button class="Scissors">Scissors</button>
+    </div>
+
+    <div class="selections"><span id="player"></span> <span id="computer"></span></div>
+    <div class="screen">
+        <div class="beforeFinish">
+            <div class="result"></div>
+            <div class="resText"></div>
+        </div>
+        <div class="FinalResult"></div>
+    </div>
     <script src="app.js"></script>
+
 </body>
 
 </html>
